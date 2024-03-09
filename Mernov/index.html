@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Rock scissors paper</title>
+</head>
+<body>
+    <header>
+        <h1>ROCK SCISSORS PAPER</h1>
+    </header>
+    <main>
+        <h1 class="game-label">Start the game!</h1>
+
+        <div class="game-area">
+            <div class="choice player-choice">
+                <button type="button" class="rock player-button">
+                    <img class="player-img rock-img" src="static/images/rock.png" alt="ROCK" height="150" width="150">
+                </button>
+                <button type="button" class="scissors player-button">
+                    <img class="player-img scissors-img" src="static/images/scissors.png" alt="SCISSORS" height="150" width="150">      
+                </button>
+                <button type="button" class="paper player-button">
+                    <img class="player-img paper-img" src="static/images/paper.png" alt="PAPER" height="150" width="150">
+                </button>
+            </div>
+            <div class="choice computer-choice">
+                <button class="rock computer-button">
+                    <img src="static/images/rock.png" alt="ROCK" height="150" width="150">
+                </button>
+                <button class="scissors computer-button">
+                    <img src="static/images/scissors.png" alt="SCISSORS" height="150" width="150">
+                </button>
+                <button class="paper computer-button">
+                    <img src="static/images/paper.png" alt="PAPER" height="150" width="150">
+                </button>
+            </div>
+            
+        </div>
+
+        <h1 class="score">Your points <span class="playerPoints">0</span>
+        | <span class="computerPoints">0</span> Computer points</h1>
+
+
+        <button class="reset-button" type="button">RESET</button>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
