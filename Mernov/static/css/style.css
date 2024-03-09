@@ -59,6 +59,13 @@ h1.game-label {
     margin-right: 10px
 }
 
+.computer-active-button{
+    border: none;
+    border-radius: 12px;
+    box-shadow: none;
+    background-color: rgb(141, 18, 39);
+}
+
 .player-button{
     cursor: pointer;
     z-index: 1;
@@ -78,6 +85,13 @@ h1.game-label {
     border: none;
     box-shadow: none;
     background-color: rgb(57, 50, 63);
+}
+
+.player-active-button{
+    border: none;
+    border-radius: 12px;
+    box-shadow: none;
+    background-color: rgb(34, 67, 129);
 }
 
 /*~~~ SCORE POINTS ~~~*/
