@@ -36,40 +36,14 @@ choices.forEach((choice) => {
 
         if (choice.id === computerChoice){
             gameTitle.innerHTML = "It's a tie";
-        } else if (choice.id === "ROCK"){
-            if(computerChoice === "PAPER"){
-                computerPoints.innerHTML = cPoints + 1;
-                gameTitle.innerHTML = "You lost =("; 
-            }
-                
-            else if(computerChoice === "SCISSORS"){
-                playerPoints.innerHTML = pPoints + 1;
-                gameTitle.innerHTML = "You won!";
-            }
-                
-        } else if (choice.id === "SCISSORS"){
-            if(computerChoice === "PAPER"){
-                playerPoints.innerHTML = pPoints + 1;
-                gameTitle.innerHTML = "You won!";
-            }
-                
-            else if(computerChoice === "ROCK"){
-                computerPoints.innerHTML = cPoints + 1;
-                gameTitle.innerHTML = "You lost =(";
-            }
-                
-        } else if (choice.id === "PAPER"){
-            if(computerChoice === "SCISSORS"){
-                computerPoints.innerHTML = cPoints + 1;
-                gameTitle.innerHTML = "You lost =(";
-            }
-                
-            else if(computerChoice === "ROCK"){
-                playerPoints.innerHTML = pPoints + 1;
-                gameTitle.innerHTML = "You won!";
-            }    
+        } else if ((choice.id ==="ROCK" && computerChoice === "SCISSORS")
+        ||         (choice.id === "SCISSORS" && computerChoice === "PAPER")
+        ||         (choice.id === "PAPER" && computerChoice === "ROCK")){
+            playerPoints.innerHTML = pPoints + 1;
+            gameTitle.innerHTML = "You won!";
+        } else{
+            computerPoints.innerHTML = cPoints + 1;
+            gameTitle.innerHTML = "You lost =(";
         }
     });
 });
-
-
